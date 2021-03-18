@@ -12,6 +12,16 @@ BOT_NAME = 'Hospital'
 SPIDER_MODULES = ['Hospital.spiders']
 NEWSPIDER_MODULE = 'Hospital.spiders'
 
+# 改用分布式调度器
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# 过滤规则也用新的
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+
+# 是否支持断点续爬和增量爬虫,不清楚请求指纹
+SCHEDULER_PERSIST = True
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = '6379'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 from user_agent import generate_user_agent
@@ -71,9 +81,10 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'Hospital.pipelines.HospitalPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'Hospital.pipelines.HospitalPipeline': 300,
+#    'scrapy_redis.pipelines.RedisPipeline': 200,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
