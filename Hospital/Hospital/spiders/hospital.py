@@ -4,7 +4,7 @@ from Hospital.items import HospitalItem
 import re
 
 
-class HospitalSpider(RedisSpider):
+class HospitalSpider(RedisSpider):    # 继承这个类
     name = 'hospital'
     # allowed_domains = ['www.xxx.com']
     # start_urls = ['http://z.xywy.com/']  # 注掉start_urls,
@@ -13,9 +13,9 @@ class HospitalSpider(RedisSpider):
     def parse(self, response):
         # 获取每个城市的链接
         city_list = response.xpath('//div[@class="z-area-table clearfix pt5"]/ul/li/a/@href').getall()
-        # for city_url in city_list:
-        city_url = city_list[0]
-        yield scrapy.Request(city_url, callback=self.parse_name)
+        for city_url in city_list:
+        # city_url = city_list[0]
+            yield scrapy.Request(city_url, callback=self.parse_name)
 
     def parse_name(self, response):
         # 获取医院名和链接
