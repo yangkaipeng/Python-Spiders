@@ -29,10 +29,13 @@ curl http://localhost:6800/cancel.json -d project=demo -d job='jobid'
 7.其他常用操作
 获取部署的爬虫列表
 curl http://localhost:6800/listprojects.json
+
 获取项目下的爬虫文件列表
 curl http://localhost:6800/listspiders.json?project=demo
+
 获取工程下的爬虫运行状态
 curl http://localhost:6800/listjobs.json?project=demo
+
 删除部署的爬虫项目
 curl http://localhost:6800/delproject.json -d project=demo
 
