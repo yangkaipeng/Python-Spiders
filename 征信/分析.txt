@@ -1,0 +1,26 @@
+
+var randomNumber = Math.random();
+		var uuid = getNum();      
+		$(obj).attr(
+				"src",
+				"captchaNew.do?captchaId=" + uuid.replace("-", "")
+						+ "&random=" + randomNumber);
+
+	function getNum() {
+		var chars = [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A',
+				'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+				'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+				'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
+				'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
+				'x', 'y', 'z' ];
+		var nums = "";
+		for (var i = 0; i < 32; i++) {
+			var id = parseInt(Math.random() * 61);
+			nums += chars[id];
+		}
+		return nums;
+	}
+
+
+
+[{"autoCount":true,"currentPage":1,"delIds":"","filters":"","firstResult":0,"pageSize":10,"privileges":{},"result":[{"age":0,"areaId":0,"areaName":"","businessEntity":"","cardNum":"","caseCode":"(2015)新执字第00368号","courtName":"","disruptInfor":"","disruptTypeName":"","duty":"","focusNumber":0,"gistId":"","gistUnit":"","id":97742926,"iname":"陆毅","jsonObject":"{\"id\":97742926,\"iname\":\"陆毅\",\"caseCode\":\"(2015)新执字第00368号\",\"regDate\":\"2015年01月29日\"}","partyTypeName":"","performance":"","performedPart":"","publishDate":null,"qysiler":[],"regDate":{"date":29,"day":4,"hours":0,"minutes":0,"month":0,"seconds":0,"time":1422460800000,"timezoneOffset":-480,"year":115},"sexy":"","unperformPart":"","urlcpws":"","urltszb":""},{"age":0,"areaId":0,"areaName":"","businessEntity":"","cardNum":"","caseCode":"(2016)苏0302执1560号","courtName":"","disruptInfor":"","disruptTypeName":"","duty":"","focusNumber":0,"gistId":"","gistUnit":"","id":516503067,"iname":"陆毅","jsonObject":"{\"id\":516503067,\"iname\":\"陆毅\",\"caseCode\":\"(2016)苏0302执1560号\",\"regDate\":\"2016年11月02日\"}","partyTypeName":"","performance":"","performedPart":"","publishDate":null,"qysiler":[],"regDate":{"date":2,"day":3,"hours":0,"minutes":0,"month":10,"seconds":0,"time":1478016000000,"timezoneOffset":-480,"year":116},"sexy":"","unperformPart":"","urlcpws":"","urltszb":""},{"age":0,"areaId":0,"areaName":"","businessEntity":"","cardNum":"","caseCode":"（2019）粤0203执106号","courtName":"","disruptInfor":"","disruptTypeName":"","duty":"","focusNumber":0,"gistId":"","gistUnit":"","id":706669308,"iname":"陆毅雄","jsonObject":"{\"id\":706669308,\"iname\":\"陆毅雄\",\"caseCode\":\"（2019）粤0203执106号\",\"regDate\":\"2019年01月17日\"}","partyTypeName":"","performance":"","performedPart":"","publishDate":null,"qysiler":[],"regDate":{"date":17,"day":4,"hours":0,"minutes":0,"month":0,"seconds":0,"time":1547654400000,"timezoneOffset":-480,"year":119},"sexy":"","unperformPart":"","urlcpws":"","urltszb":""},{"age":0,"areaId":0,"areaName":"","businessEntity":"","cardNum":"","caseCode":"（2019）粤0282执10号","courtName":"","disruptInfor":"","disruptTypeName":"","duty":"","focusNumber":0,"gistId":"","gistUnit":"","id":706675443,"iname":"陆毅雄","jsonObject":"{\"id\":706675443,\"iname\":\"陆毅雄\",\"caseCode\":\"（2019）粤0282执10号\",\"regDate\":\"2019年01月02日\"}","partyTypeName":"","performance":"","performedPart":"","publishDate":null,"qysiler":[],"regDate":{"date":2,"day":3,"hours":0,"minutes":0,"month":0,"seconds":0,"time":1546358400000,"timezoneOffset":-480,"year":119},"sexy":"","unperformPart":"","urlcpws":"","urltszb":""},{"age":0,"areaId":0,"areaName":"","businessEntity":"","cardNum":"","caseCode":"（2019）粤0282执45号","courtName":"","disruptInfor":"","disruptTypeName":"","duty":"","focusNumber":0,"gistId":"","gistUnit":"","id":706870454,"iname":"陆毅雄","jsonObject":"{\"id\":706870454,\"iname\":\"陆毅雄\",\"caseCode\":\"（2019）粤0282执45号\",\"regDate\":\"2019年01月07日\"}","partyTypeName":"","performance":"","performedPart":"","publishDate":null,"qysiler":[],"regDate":{"date":7,"day":1,"hours":0,"minutes":0,"month":0,"seconds":0,"time":1546790400000,"timezoneOffset":-480,"year":119},"sexy":"","unperformPart":"","urlcpws":"","urltszb":""},{"age":0,"areaId":0,"areaName":"","businessEntity":"","cardNum":"","caseCode":"（2020）粤0282执292号","courtName":"","disruptInfor":"","disruptTypeName":"","duty":"","focusNumber":0,"gistId":"","gistUnit":"","id":710265309,"iname":"陆毅雄","jsonObject":"{\"id\":710265309,\"iname\":\"陆毅雄\",\"caseCode\":\"（2020）粤0282执292号\",\"regDate\":\"2020年03月17日\"}","partyTypeName":"","performance":"","performedPart":"","publishDate":null,"qysiler":[],"regDate":{"date":17,"day":2,"hours":0,"minutes":0,"month":2,"seconds":0,"time":1584374400000,"timezoneOffset":-480,"year":120},"sexy":"","unperformPart":"","urlcpws":"","urltszb":""}],"sidx":"","sord":"","totalPage":1,"totalSize":6}]
