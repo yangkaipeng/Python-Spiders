@@ -1,0 +1,34 @@
+问题:  在添加服务器时,出现了连接不上的问题,暂时未知
+
+# 安装
+pip install gerapy
+
+# 初始化，会在当前目录生成一个gerapy文件夹
+gerapy init
+
+# 进入gerapy所在目录
+cd gerapy
+
+# 初始化一个sqlite数据库
+gerapy migrate
+
+# 创建用户
+gerapy createsuperuser
+
+# 开启服务
+gerapy runserver
+
+# 在服务器端开启scrapyd服务
+scrapyd
+
+# 在本地浏览器打开http://127.0.0.1:8000/，即可看到可视化页面
+
+# 主机管理页：
+  绑定要部署的服务器
+
+# 项目管理页：
+  上传要部署的项目文件，具体操作就是将整个scrapy文件放入gerapy文件夹下的projects文件夹中
+  点击部署，会提示先打包项目，然后点击部署
+
+# 重新回到主机管理页
+  点击调度，即可看到部署的项目，点击运行即可执行
