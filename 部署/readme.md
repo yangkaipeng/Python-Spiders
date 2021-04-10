@@ -19,8 +19,10 @@ url = http://localhost:6800/         本地部署
 3.开启scrapyd
 命令行输入 scrapyd
 
-4.开始部署
-scrapyd-deploy -p demo(项目名称)
+4.开始部署(在cfg同级目录下打开cmd，输入以下命令)
+scrapyd-deploy <target> -p demo(项目名称)
+<target>为[deploy:<name>]中的name，可以是给服务器起的别名，方便多个服务器部署时使用。
+    如果没有写<name>，那么<target>也不要写，系统会默认没有
 
 5.开启爬虫
 curl http://localhost:6800/schedule.json -d project=demo -d spider=mydemo
