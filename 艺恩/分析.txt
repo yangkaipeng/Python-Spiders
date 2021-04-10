@@ -1,0 +1,39 @@
+艺恩实时票房 https://www.endata.com.cn/BoxOffice/BO/RealTime/reTimeBO.html
+
+实际请求api： https://www.endata.com.cn/API/GetData.ashx    （xhr可得）
+
+
+post请求，返回的是加密后的内容
+ '75F371CC3CCE5157AEA3E524789C1E2FF443A5CF534A112F14CB8.....'    （省略几百个字符）
+
+
+ 开发者工具中全局搜索 MethodName
+ 在Common.js中找到相关的几条，并锁定可疑数据 data
+ 打断点操作后，返现data在经过下面这个方法之后，由加密内容变成了正常的内容
+  data = JSON.parse(webInstace.shell(data));
+ 点进来找 webInstace.shell 所在位置
+ 在webDES.min.js文件中，看这样子，是个对称加密的算法
+ 在js文件最下面，找到了webInstace的定义，顺藤摸瓜，将得到的加密数据怼进去
+ webInstace.shell(data)    （data是上面那一坨 75F371...）
+ 我们想要的就有了
+ 接下来就是怎么复现这段js代码了
+ 安装PyExecJS
+ pip install PyExecJS
+
+ 想到半夜四点才想明白。。。。
+ 继续debug会发现，真正修改数据的是这儿：
+    function(_0xa0c834)
+但是却被包裹在webDES函数中，一晚上调不出来东西
+把他拆出来，重新定义在外层，起个名字叫shell(随意)
+带劲代码里就解出来了
+
+回到首页
+首页的版块有好几个，但是共用的同一个api，区分它们就要靠下面这几个post参数了
+    showDate:     （无用，直接忽略）
+    tdate: 2021-04-11   （当天日期）
+    MethodName: BoxOffice_GetHourBoxOffice   （决定性的值）
+
+就这样吧，困了
+
+js代码感觉有点多，以后再看看能不能删除点吧
+
