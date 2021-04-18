@@ -18,7 +18,7 @@ gerapy createsuperuser
 # 开启服务
 gerapy runserver
 
-# 在服务器端开启scrapyd服务
+# 在服务器端开启scrapyd服务(最好能在项目目录下输入该命令)
 scrapyd
 
 # 在本地浏览器打开http://127.0.0.1:8000/，即可看到可视化页面
