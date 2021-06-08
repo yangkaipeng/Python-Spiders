@@ -1,4 +1,6 @@
-# Scrapy settings for Hospital project
+# -*- coding: utf-8 -*-
+
+# Scrapy settings for wangyiyun_splash project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,36 +9,23 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Hospital'
+BOT_NAME = 'wangyiyun_splash'
 
-SPIDER_MODULES = ['Hospital.spiders']
-NEWSPIDER_MODULE = 'Hospital.spiders'
+SPIDER_MODULES = ['wangyiyun_splash.spiders']
+NEWSPIDER_MODULE = 'wangyiyun_splash.spiders'
 
-# 改用分布式调度器
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-# 过滤规则也用新的
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
-
-# 是否支持断点续爬和增量爬虫,不清楚请求指纹
-SCHEDULER_PERSIST = True
-
-REDIS_HOST = 'localhost'
-REDIS_PORT = '6379'
-
+#splash
+SPLASH_URL = 'http://192.168.124.18:8050'
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+# HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+from scrapy_splash import SplashAwareDupeFilter,SplashMiddleware
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-from user_agent import generate_user_agent
-USER_AGENT = generate_user_agent()
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-# 配置日志级别和文件
 LOG_LEVEL = 'WARNING'
-LOG_FILE = 'hospital.log'
-
-# 配置存储中文编码(json格式下)
-FEED_EXPORT_ENCODING = 'utf-8'
-
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -63,15 +52,19 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'Hospital.middlewares.HospitalSpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+   'wangyiyun_splash.middlewares.WangyiyunSplashSpiderMiddleware': 543,
+   'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'Hospital.middlewares.HospitalDownloaderMiddleware': 543,
-# }
+DOWNLOADER_MIDDLEWARES = {
+   'wangyiyun_splash.middlewares.WangyiyunSplashDownloaderMiddleware': 543,
+   'scrapy_splash.SplashCookiesMiddleware': 723,
+   'scrapy_splash.SplashMiddleware': 725,  # 当使用request.meta['splash']的时候起作用，直接SplashRequest不需要
+   'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -81,10 +74,9 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'Hospital.pipelines.HospitalPipeline': 300,
-#    'scrapy_redis.pipelines.RedisPipeline': 200,
-}
+#ITEM_PIPELINES = {
+#    'wangyiyun_splash.pipelines.WangyiyunSplashPipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

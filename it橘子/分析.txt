@@ -1,0 +1,46 @@
+https://www.itjuzi.com/api/companys
+
+
+cookie: juzi_user=946027; juzi_token=bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3Lml0anV6aS5jb21cL2FwaVwvYXV0aG9yaXphdGlvbnMiLCJpYXQiOjE2MTg0MDIxNzQsImV4cCI6MTYxODQwOTM3NCwibmJmIjoxNjE4NDAyMTc0LCJqdGkiOiJpMHk5MXpxRG5TbVRoaTZTIiwic3ViIjo5NDYwMjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1dWlkIjoiQ0VKc2pCIn0.3nWU1QOYo93YHG_lWDp__u4rXYer3bZoBia82cvDOU4
+
+authorization: "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3Lml0anV6aS5jb21cL2FwaVwvYXV0aG9yaXphdGlvbnMiLCJpYXQiOjE2MTg0MDIxNzQsImV4cCI6MTYxODQwOTM3NCwibmJmIjoxNjE4NDAyMTc0LCJqdGkiOiJpMHk5MXpxRG5TbVRoaTZTIiwic3ViIjo5NDYwMjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJ1dWlkIjoiQ0VKc2pCIn0.3nWU1QOYo93YHG_lWDp__u4rXYer3bZoBia82cvDOU4"
+
+
+referer: https://www.itjuzi.com/company
+
+city: []
+com_fund_needs: ""
+hot_city: ""
+keyword: ""
+location: ""
+page: 1
+pagetotal: 0
+per_page: 20
+prov: ""
+round: []
+scope: ""
+selected: ""
+sort: ""
+status: ""
+sub_scope: ""
+total: 0
+year: []
+
+
+city: []
+com_fund_needs: ""
+hot_city: ""
+keyword: ""
+location: ""
+page: 2
+pagetotal: 199334
+per_page: 20
+prov: ""
+round: []
+scope: ""
+selected: ""
+sort: ""
+status: ""
+sub_scope: ""
+total: 0
+year: []

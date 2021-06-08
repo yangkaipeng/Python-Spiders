@@ -1,0 +1,92 @@
+https://www.toutiao.com/api/pc/list/feed
+
+channel_id: 0
+min_behot_time: 0
+category: pc_profile_recommend
+refresh_count: 1
+_signature: _02B4Z6wo00f01AMl-2gAAIDCM3PM.9hziEwDAf.AAGBPgOkr46oBWls6C6SdpwWpEcpKvO6oJLT7jkLVqvID9MRfXWVb33hjssF9HDrLv-u5Vfi4dYEiMM-6VscurmK1fYBnlIfgbx2jp0rrc3
+
+offset: 0
+channel_id: 94349549395
+max_behot_time: 0
+category: pc_profile_channel
+_signature: _02B4Z6wo00f01AMl-2gAAIDCM3PM.9hymhwDAf.AAGBPENVdvXVBUkN.nT94bWfEi4MNm27mL-hzfAMC.5PlYDtUJBDzMxWoUbUZuC50F5fHjyslOcKuLAN2LdGTyHNc8tDsIHWH7xTqmBaB57
+
+channel_id: 0
+max_behot_time: 1619010932
+category: pc_profile_recommend
+_signature: _02B4Z6wo00d010FeHcQAAIDBcQgqUbT5gWtBehlAALDisJ1K7UR3zcdZNGB6ZeEfTFPw7GxuZVby4ZVSDnluI6.1Y6xSEmhYic2Ifr-cJPy9VjaLdJMHVjFcZ6OXWKvpPy5-Viu1GneQAGYI3c
+
+channel_id: 0
+max_behot_time: 1619010952
+category: pc_profile_recommend
+_signature: _02B4Z6wo00d01FF4AEAAAIDCYS431QnOG5xRXATAAHTlsJ1K7UR3zcdZNGB6ZeEfTFPw7GxuZVby4ZVSDnluI6.1Y6xSEmhYic2Ifr-cJPy9VjaLdJMHVjFcZ6OXWKvpPy5-Viu1GneQAGYI66
+
+
+V.interceptors.request.use((function(e) {
+    var t;
+    if (!O(e.url))
+        return e;
+    if (null === (t = e.params) || void 0 === t ? void 0 : t._signature)  
+        delete e.params._signature;
+    var n = V.getUri(e);
+    var a = j(n, e);
+    e.params = F(F({}, e.params), {}, {
+        _signature: a
+    });
+    return e
+}
+
+1. 
+_signature: a
+
+2. 
+var a = j(n, e);
+
+3.
+n="/api/pc/list/feed?offset=0&channel_id=94349549395&max_behot_time=0&category=pc_profile_channel"
+e = {url: "/api/pc/list/feed", 
+    method: "get", 
+    params: {…}, 
+    headers: {…}, 
+    transformRequest: Array(1), …}
+
+function j(e, t) {
+    var n, a;
+    var r = "".concat(location.protocol, "//").concat(location.host, "/toutiao");  //r: "https://www.toutiao.com/toutiao"
+    if (false)
+        ;var o = {
+        url: r + e    //url: "https://www.toutiao.com/toutiao/api/pc/info"
+    };
+    if (t.data)
+        o.body = t.data;
+    var i = (null === (n = window.byted_acrawler) || void 0 === n ? void 0 : null === (a = n.sign) || void 0 === a ? void 0 : a.call(n, o)) || "";
+    return i
+}
+
+
+
+n = "/api/pc/info"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

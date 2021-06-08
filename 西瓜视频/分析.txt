@@ -1,0 +1,166 @@
+
+https://www.ixigua.com/api/feedv2/feedById
+
+
+https://m.ixigua.com/api/feedv2/feedById
+
+aid: 3586
+timestamp: 1618731433291_940403.4310389913
+channelName: 
+channelId: 94349555027
+count: 9
+refresh_type: open
+request_from: 710
+queryCount: 1
+_signature: _02B4Z6wo00f01BwoOUQAAIDCLH4O08UEvLgcPD3AAGd4YuPaY4NvGtZPL3mVP-cg8fd2uDyefaVerk0HLPz7H.hhM5ZUlOE3iVPt9t6CWUywP0Dy5eVffqLRwx3j7uI62ipnflR6f9n3HAeif3
+
+aid: 3586
+timestamp: 1618731511895_991166.5440684367
+channelName: 
+channelId: 94349555027
+count: 9
+refresh_type: load_more
+request_from: 710
+queryCount: 1
+_signature: _02B4Z6wo00f01ND.uTgAAIDC4KmOrRjW1pjQ672AAFRJ0ojrln-Mz5QnSFtwFEq8yH6ybUZwDX0xE4C.zSsgdaq5h4MYCXFtq85jm-.6WyHA2zjWNT-LxScXhFWTErVaHAtE6KlpBBXedyrE63
+
+aid: 3586
+timestamp: 1618731512645_16023.622462094212
+ channelName: 
+ channelId: 94349555027
+ count: 9
+ refresh_type: load_more
+ request_from: 710
+ queryCount: 1
+_signature: _02B4Z6wo00f01E9.ZAwAAIDCfylTmj4FWcBPa2CAAHOr0ojrln-Mz5QnSFtwFEq8yH6ybUZwDX0xE4C.zSsgdaq5h4MYCXFtq85jm-.6WyHA2zjWNT-LxScXhFWTErVaHAtE6KlpBBXedyrEc1
+
+, g = {
+channelName: "",
+channelId: "94349555027",
+count: 9,
+refresh_type: "open",
+request_from: "710",
+queryCount: 1
+}
+
+
+
+
+#  频道号
+default: "94349555027",
+vlog: "94349533351",
+food: "6141508391",
+made: "94349531488",
+agriculture: "61887739390",
+variety: "61887739345",
+funny: "61887739369",
+music: "61887739368",
+child: "6141508395",
+game: "61887739376",
+nba: "94349530916",
+pet: "6141508406"
+
+
+main  api/feedv2/feedById  5194
+
+
+https://m.ixigua.com/video/6838987591883162126
+                           6838987591883162126
+
+
+
+aid: 3586
+timestamp: 1618737455789_172766.11864942694
+channelName: 
+channelId: 94349555027
+count: 9
+refresh_type: open
+request_from: 710
+queryCount: 1
+_signature: _02B4Z6wo00f01uK2znAAAIDA0uD55682VcbiosrAANjjH7yGfxCSX.Od6AJM.cJLmsJgEiHDwzlUTwJiUMecDwkZNfzgrP3b778u8bgZGp5DzmmI9YTI7v4UZTCkBBfsumwWsCb.Sz2PAS13b6
+
+
+
+网页端：
+6149
+"_02B4Z6wo00f01DqN.NQAAIDCCtvLQl7k0bg6rfhAAG7f11"
+
+3822
+categoryName: "subv_xg_lvideo_pc_homepage"
+channelId: "94349548185"
+channelType: "long_video"
+request_from: 702
+_signature: "_02B4Z6wo00f01R4yo7AAAIDDLmSUJLaYtckeEqcAACfz8d"
+
+3822
+_signature: "_02B4Z6wo00f01mYdZNwAAIDAVktTSbw5sjpmPWBAAPoKa2"
+
+
+3822
+/api/cinema/feed/feedById
+channelId: "94349541307"
+limit: 2
+offset: 5
+queryCount: undefined
+request_from: 701
+_signature: "_02B4Z6wo00f01VfrcbAAAIDDZ71GJaNdQCVXy3UAADWK9a"
+
+url: "/api/messagev2/get/unread_count"
+_signature: "_02B4Z6wo00f01Ask3vwAAIDCO3LpaQw1LOQLBNpAAGK70c"
+
+
+channelId: 94349541307
+offset: 5
+limit: 2
+request_from: 701
+_signature: _02B4Z6wo00f01VfrcbAAAIDDZ71GJaNdQCVXy3UAADWK9a
+
+***************************************************
+e.params._signature = Object(c.a)(e)
+c = n(220)
+
+e.params._signature = Object(f.a)(e)
+f = n(220)
+n(220) = c(220)
+
+function c(t) {
+    if (n[t])
+        return n[t].exports;     //  i: 220  l: true
+    var r = n[t] = {
+        i: t,
+        l: !1,
+        exports: {}
+    };
+    return e[t].call(r.exports, r, r.exports, c),
+    r.l = !0,
+    r.exports
+}
+
+n(220)
+exports: {}
+i: 220
+l: true
+
+e(220)
+function(e, t, n) {
+    "use strict";
+    n.d(t, "a", (function() {
+        return i
+    }
+    ));
+    var a = n(30)
+      , r = n.n(a);
+    function i(e) {
+        var t = e.url
+          , n = e.method
+          , a = e.params
+          , i = e.data
+          , o = Object.assign({
+            url: new r.a(t).addSearch(a).href()
+        }, "post" === n ? {
+            body: i,
+            bodyVal2str: "application/x-www-form-urlencoded" === e.headers.post["Content-Type"]
+        } : {});
+        return window.byted_acrawler.sign(o)
+    }
+}

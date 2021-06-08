@@ -1,0 +1,34 @@
+[{"COUNT":150578,"CONTENT":"龟鹿二胶丸 (86902039001358 国药准字Z51021618 成都九芝堂金鼎药业有限公司)","ID":"104446"},{"COUNT":150578,"CONTENT":"龟鹿二胶丸 (86902039001365 国药准字Z51021616 成都九芝堂金鼎药业有限公司)","ID":"138793"},{"COUNT":150578,"CONTENT":"龟鹿二胶丸 (86902375000114 国药准字Z61020459 陕西郝其军制药股份有限公司)","ID":"150402"},{"COUNT":150578,"CONTENT":"龟鹿二胶丸 (86902375000107 国药准字Z61020458 陕西郝其军制药股份有限公司)","ID":"134722"},{"COUNT":150578,"CONTENT":"龟鹿二胶丸 (86900398000432 国药准字Z44020938 广州白云山敬修堂药业股份有限公司)","ID":"41638"},{"COUNT":150578,"CONTENT":"龟鹿二仙膏 (86905330000228 国药准字Z36021605 江西和明制药有限公司)","ID":"183993"},{"COUNT":150578,"CONTENT":"龟鹿二仙膏 (86903083000380 国药准字Z41022262 河南省新四方制药有限公司)","ID":"90797"},{"COUNT":150578,"CONTENT":"龟鹿二仙膏 (86904989000030；86904989000283 国药准字Z43020474 湖南千金协力药业有限公司)","ID":"79568"},{"COUNT":150578,"CONTENT":"龟鹿二仙膏 (86901812000182 国药准字Z42020052 湖北老中醫制药有限责任公司)","ID":"120056"},{"COUNT":150578,"CONTENT":"龟鹿二仙膏 (86901825000094 国药准字Z42021918 湖北康源药业有限公司)","ID":"130145"},{"COUNT":150578,"CONTENT":"龟鹿二仙口服液 (86904080000311 国药准字Z20050229 东阿阿胶股份有限公司)","ID":"171444"},{"COUNT":150578,"CONTENT":"龟蛇酒 (86904952000203；86904952000029；86904952000197 国药准字Z43020677 湖南乐邦制药有限公司)","ID":"168081"},{"COUNT":150578,"CONTENT":"龟茸壮骨片 (86903466000389 国药准字Z20083082 吉林省中研药业有限公司)","ID":"87701"},{"COUNT":150578,"CONTENT":"龟茸壮骨片 (86903466000242 国药准字B20030002 吉林省中研药业有限公司)","ID":"117262"},{"COUNT":150578,"CONTENT":"龟苓膏 (86905006000460；86905006001399 国药准字Z20026500 湖南科伦制药有限公司)","ID":"136061"},{"COUNT":150578,"CONTENT":"龟芪壮骨颗粒 (86903341000077；86903341000084 国药准字B20020412 吉林瑞隆药业有限责任公司)","ID":"176307"},{"COUNT":150578,"CONTENT":"龟芪参口服液 (86903358000916 国药准字Z22023955 吉林敖东延边药业股份有限公司)","ID":"87039"},{"COUNT":150578,"CONTENT":"龟胶养阴颗粒 (86905015000833 国药准字B20020912 九芝堂股份有限公司)","ID":"147654"},{"COUNT":150578,"CONTENT":"龟甲胶颗粒 (86904915000073 国药准字Z20026327 湖南东健药业有限公司)","ID":"119147"},{"COUNT":150578,"CONTENT":"龟甲胶颗粒 (86901812000175；86901812000274 国药准字Z10950044 湖北老中醫制药有限责任公司)","ID":"76673"}]
+
+GET /datasearch/QueryList?tableId=25&searchF=Quick%20Search&searchK=&pageIndex=2&pageSize=20 HTTP/1.1
+
+{"User-Agent":"SFDANewVerison/3.4.1 (iPad; iOS 14.2; Scale/2.00)"}
+
+http://mobile.nmpa.gov.cn/datasearch/QueryList?tableId=25&searchF=Quick%20Search&searchK=&pageIndex=3&pageSize=20
+
+tableId	25
+searchF	Quick Search
+searchK	
+pageIndex	3
+pageSize	20
+
+tableId	25
+searchF	Quick Search
+searchK	
+pageIndex	2
+pageSize	20
+
+tableId	25
+searchF	Quick Search
+searchK	
+pageIndex	4
+pageSize	20
+
+tableId: 25
+tableName: TABLE25
+title: 国产药品
+bcId: 152904713761213296322795806604
+CbSlDlH0: qGqjrqqFDfLFDfLFDbJzHRK5rJNvBzl7USD00ZGgmKZqqrL
+
+
+http://app1.nmpa.gov.cn/data_nmpa/face3/search.jsp?6SQk6G2z=GBK-5E7OlPSJ7yDQo0vR7XAVUK9x7d1VcAkXX4fX3YOx7HDSaEvMKXgVwjE4TR5kJgWe_tOq_dB53YIczKWWz3UC7DG7.v13zyxQ6PvuOITkwcDDUQ07H8LQQX7OFK5KdbFGP.GyzOLyN.EHYEOal55tjP4eN_Th5h8oNXgNKF_HM8Jr4DwQKX.mGx1k_eNzQztHOKThUHiCaoZ.YcmZIwsICtPSrzV3cOELC7eodB5kqGAfZW3kcy.M8xu7yJUt4Y.lWKHddc3vfrDTS0NbgXWIFX8DM6iVBCdi0ayaqFYeyMtagK1X5wax8MiWZYruEMrNJNabqiLxwViVCVHaKyO5bYqHdwQQvR3duhEpFcUv.H1G

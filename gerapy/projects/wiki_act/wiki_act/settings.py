@@ -1,4 +1,6 @@
-# Scrapy settings for Hospital project
+# -*- coding: utf-8 -*-
+
+# Scrapy settings for wiki_act project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,36 +9,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Hospital'
+BOT_NAME = 'wiki_act'
 
-SPIDER_MODULES = ['Hospital.spiders']
-NEWSPIDER_MODULE = 'Hospital.spiders'
-
-# 改用分布式调度器
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-# 过滤规则也用新的
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
-
-# 是否支持断点续爬和增量爬虫,不清楚请求指纹
-SCHEDULER_PERSIST = True
-
-REDIS_HOST = 'localhost'
-REDIS_PORT = '6379'
+SPIDER_MODULES = ['wiki_act.spiders']
+NEWSPIDER_MODULE = 'wiki_act.spiders'
+LOG_LEVEL = 'WARNING'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-from user_agent import generate_user_agent
-USER_AGENT = generate_user_agent()
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
-
-# 配置日志级别和文件
-LOG_LEVEL = 'WARNING'
-LOG_FILE = 'hospital.log'
-
-# 配置存储中文编码(json格式下)
-FEED_EXPORT_ENCODING = 'utf-8'
-
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -64,14 +47,14 @@ FEED_EXPORT_ENCODING = 'utf-8'
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Hospital.middlewares.HospitalSpiderMiddleware': 543,
+#    'wiki_act.middlewares.WikiActSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'Hospital.middlewares.HospitalDownloaderMiddleware': 543,
-# }
+#DOWNLOADER_MIDDLEWARES = {
+#    'wiki_act.middlewares.WikiActDownloaderMiddleware': 543,
+#}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -82,8 +65,7 @@ FEED_EXPORT_ENCODING = 'utf-8'
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'Hospital.pipelines.HospitalPipeline': 300,
-#    'scrapy_redis.pipelines.RedisPipeline': 200,
+   'wiki_act.pipelines.WikiActPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
